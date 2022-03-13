@@ -154,7 +154,7 @@
             this.chart_shell.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart_shell.Legends.Add(legend2);
-            this.chart_shell.Location = new System.Drawing.Point(616, 227);
+            this.chart_shell.Location = new System.Drawing.Point(616, 215);
             this.chart_shell.Name = "chart_shell";
             series2.ChartArea = "ChartArea1";
             series2.IsXValueIndexed = true;
