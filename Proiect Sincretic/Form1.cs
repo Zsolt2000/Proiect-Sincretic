@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Threading;
+using System.Diagnostics;
 namespace Proiect_Sincretic
 {
     public partial class Form1 : Form
@@ -18,12 +19,6 @@ namespace Proiect_Sincretic
         }
         private void btn_generate_Click(object sender, EventArgs e)
         {
-            string array_size = txt_array.Text;
-            string max_value = txt_maxvalue.Text;
-            string array_label="";
-            Random random = new Random();
-            int size = int.Parse(array_size);
-            int[] arr = new int[size];
             if ((txt_maxvalue.Text == "") || (txt_array.Text == ""))
                 MessageBox.Show("Please insert values");
             else
@@ -60,5 +55,46 @@ namespace Proiect_Sincretic
             }
         }
 
+        private void bubbblesort(int[] arr,int N)
+        {
+            int i, ok, aux;
+            do
+            {
+                chart_bubble.Series["Elements"].Points.Clear();
+                ok = 1;
+                for (i = 0; i < N-1; i++)
+                    if (arr[i] > arr[i + 1])
+                    {
+                        ok = 0;
+                        aux = arr[i];
+                        arr[i] = arr[i + 1];
+                        arr[i + 1] = aux;                    
+                    }
+               
+                for (i=0;i<N;i++)
+              {
+                    Application.DoEvents();
+                    chart_bubble.Series["Elements"].Points.AddXY(arr[i],arr[i]);                   
+              }
+                Thread.Sleep(1);
+            } while (ok == 0);
+        }
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string array = lbl_array.Text;
+            string[] numbers = array.Split(' ');
+            int[] arr = new int[int.Parse(txt_array.Text)];
+            for (int i = 0; i < int.Parse(txt_array.Text); i++)
+            {
+                arr[i]=int.Parse(numbers[i]);
+            }
+            Stopwatch sw = Stopwatch.StartNew();
+            bubbblesort(arr,int.Parse(txt_array.Text));
+            sw.Stop();
+            lbl_time1.Text = Convert.ToString(sw.Elapsed.TotalMilliseconds);
+        }
     }
 }

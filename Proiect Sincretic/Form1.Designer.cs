@@ -52,14 +52,14 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lbl_execBubble = new System.Windows.Forms.Label();
             this.lbl_execQuick = new System.Windows.Forms.Label();
-            this.list_Bubble = new System.Windows.Forms.ListBox();
-            this.list_Shell = new System.Windows.Forms.ListBox();
-            this.list_Quick = new System.Windows.Forms.ListBox();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.lbl_array = new System.Windows.Forms.Label();
+            this.lbl_time1 = new System.Windows.Forms.Label();
+            this.lbl_time2 = new System.Windows.Forms.Label();
+            this.lbl_time3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart_bubble)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_shell)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_quick)).BeginInit();
@@ -160,6 +160,7 @@
             series2.IsXValueIndexed = true;
             series2.Legend = "Legend1";
             series2.Name = "Elements";
+            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
             this.chart_shell.Series.Add(series2);
             this.chart_shell.Size = new System.Drawing.Size(289, 159);
             this.chart_shell.TabIndex = 9;
@@ -185,7 +186,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(438, 196);
+            this.label5.Location = new System.Drawing.Point(416, 196);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 11;
@@ -229,36 +230,6 @@
             this.lbl_execQuick.TabIndex = 18;
             this.lbl_execQuick.Text = "Execution Time:";
             // 
-            // list_Bubble
-            // 
-            this.list_Bubble.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.list_Bubble.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.list_Bubble.FormattingEnabled = true;
-            this.list_Bubble.Location = new System.Drawing.Point(448, 439);
-            this.list_Bubble.Name = "list_Bubble";
-            this.list_Bubble.Size = new System.Drawing.Size(92, 13);
-            this.list_Bubble.TabIndex = 19;
-            // 
-            // list_Shell
-            // 
-            this.list_Shell.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.list_Shell.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.list_Shell.FormattingEnabled = true;
-            this.list_Shell.Location = new System.Drawing.Point(757, 439);
-            this.list_Shell.Name = "list_Shell";
-            this.list_Shell.Size = new System.Drawing.Size(92, 13);
-            this.list_Shell.TabIndex = 20;
-            // 
-            // list_Quick
-            // 
-            this.list_Quick.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.list_Quick.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.list_Quick.FormattingEnabled = true;
-            this.list_Quick.Location = new System.Drawing.Point(1061, 439);
-            this.list_Quick.Name = "list_Quick";
-            this.list_Quick.Size = new System.Drawing.Size(92, 13);
-            this.list_Quick.TabIndex = 21;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -277,6 +248,7 @@
             this.button1.TabIndex = 23;
             this.button1.Text = "Sort";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -304,20 +276,47 @@
             this.lbl_array.Size = new System.Drawing.Size(900, 15);
             this.lbl_array.TabIndex = 26;
             // 
+            // lbl_time1
+            // 
+            this.lbl_time1.AutoSize = true;
+            this.lbl_time1.Location = new System.Drawing.Point(449, 439);
+            this.lbl_time1.Name = "lbl_time1";
+            this.lbl_time1.Size = new System.Drawing.Size(35, 13);
+            this.lbl_time1.TabIndex = 27;
+            this.lbl_time1.Text = "label9";
+            // 
+            // lbl_time2
+            // 
+            this.lbl_time2.AutoSize = true;
+            this.lbl_time2.Location = new System.Drawing.Point(758, 439);
+            this.lbl_time2.Name = "lbl_time2";
+            this.lbl_time2.Size = new System.Drawing.Size(35, 13);
+            this.lbl_time2.TabIndex = 28;
+            this.lbl_time2.Text = "label9";
+            // 
+            // lbl_time3
+            // 
+            this.lbl_time3.AutoSize = true;
+            this.lbl_time3.Location = new System.Drawing.Point(1062, 439);
+            this.lbl_time3.Name = "lbl_time3";
+            this.lbl_time3.Size = new System.Drawing.Size(41, 13);
+            this.lbl_time3.TabIndex = 29;
+            this.lbl_time3.Text = "label10";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(1309, 566);
+            this.Controls.Add(this.lbl_time3);
+            this.Controls.Add(this.lbl_time2);
+            this.Controls.Add(this.lbl_time1);
             this.Controls.Add(this.lbl_array);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.list_Quick);
-            this.Controls.Add(this.list_Shell);
-            this.Controls.Add(this.list_Bubble);
             this.Controls.Add(this.lbl_execQuick);
             this.Controls.Add(this.lbl_execBubble);
             this.Controls.Add(this.label7);
@@ -359,14 +358,14 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbl_execBubble;
         private System.Windows.Forms.Label lbl_execQuick;
-        private System.Windows.Forms.ListBox list_Bubble;
-        private System.Windows.Forms.ListBox list_Shell;
-        private System.Windows.Forms.ListBox list_Quick;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label lbl_array;
+        private System.Windows.Forms.Label lbl_time1;
+        private System.Windows.Forms.Label lbl_time2;
+        private System.Windows.Forms.Label lbl_time3;
     }
 }
 
