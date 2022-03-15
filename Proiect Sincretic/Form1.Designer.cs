@@ -53,8 +53,8 @@
             this.lbl_execBubble = new System.Windows.Forms.Label();
             this.lbl_execQuick = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_bubblesort = new System.Windows.Forms.Button();
+            this.btn_shellsort = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.lbl_array = new System.Windows.Forms.Label();
             this.lbl_time1 = new System.Windows.Forms.Label();
@@ -240,24 +240,25 @@
             this.label8.TabIndex = 22;
             this.label8.Text = "Execution Time:";
             // 
-            // button1
+            // btn_bubblesort
             // 
-            this.button1.Location = new System.Drawing.Point(398, 392);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Sort";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_bubblesort.Location = new System.Drawing.Point(398, 392);
+            this.btn_bubblesort.Name = "btn_bubblesort";
+            this.btn_bubblesort.Size = new System.Drawing.Size(75, 23);
+            this.btn_bubblesort.TabIndex = 23;
+            this.btn_bubblesort.Text = "Sort";
+            this.btn_bubblesort.UseVisualStyleBackColor = true;
+            this.btn_bubblesort.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn_shellsort
             // 
-            this.button2.Location = new System.Drawing.Point(710, 392);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Sort";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_shellsort.Location = new System.Drawing.Point(710, 392);
+            this.btn_shellsort.Name = "btn_shellsort";
+            this.btn_shellsort.Size = new System.Drawing.Size(75, 23);
+            this.btn_shellsort.TabIndex = 24;
+            this.btn_shellsort.Text = "Sort";
+            this.btn_shellsort.UseVisualStyleBackColor = true;
+            this.btn_shellsort.Click += new System.EventHandler(this.btn_shellsort_Click);
             // 
             // button3
             // 
@@ -281,27 +282,24 @@
             this.lbl_time1.AutoSize = true;
             this.lbl_time1.Location = new System.Drawing.Point(449, 439);
             this.lbl_time1.Name = "lbl_time1";
-            this.lbl_time1.Size = new System.Drawing.Size(35, 13);
+            this.lbl_time1.Size = new System.Drawing.Size(0, 13);
             this.lbl_time1.TabIndex = 27;
-            this.lbl_time1.Text = "label9";
             // 
             // lbl_time2
             // 
             this.lbl_time2.AutoSize = true;
             this.lbl_time2.Location = new System.Drawing.Point(758, 439);
             this.lbl_time2.Name = "lbl_time2";
-            this.lbl_time2.Size = new System.Drawing.Size(35, 13);
+            this.lbl_time2.Size = new System.Drawing.Size(0, 13);
             this.lbl_time2.TabIndex = 28;
-            this.lbl_time2.Text = "label9";
             // 
             // lbl_time3
             // 
             this.lbl_time3.AutoSize = true;
             this.lbl_time3.Location = new System.Drawing.Point(1062, 439);
             this.lbl_time3.Name = "lbl_time3";
-            this.lbl_time3.Size = new System.Drawing.Size(41, 13);
+            this.lbl_time3.Size = new System.Drawing.Size(0, 13);
             this.lbl_time3.TabIndex = 29;
-            this.lbl_time3.Text = "label10";
             // 
             // Form1
             // 
@@ -314,8 +312,8 @@
             this.Controls.Add(this.lbl_time1);
             this.Controls.Add(this.lbl_array);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_shellsort);
+            this.Controls.Add(this.btn_bubblesort);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lbl_execQuick);
             this.Controls.Add(this.lbl_execBubble);
@@ -359,8 +357,8 @@
         private System.Windows.Forms.Label lbl_execBubble;
         private System.Windows.Forms.Label lbl_execQuick;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_bubblesort;
+        private System.Windows.Forms.Button btn_shellsort;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label lbl_array;
         private System.Windows.Forms.Label lbl_time1;

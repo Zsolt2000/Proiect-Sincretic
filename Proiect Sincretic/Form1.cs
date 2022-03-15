@@ -79,8 +79,25 @@ namespace Proiect_Sincretic
                 Thread.Sleep(1);
             } while (ok == 0);
         }
+        private void shellsort(int[] arr,int N)
+        {
 
-
+            for(int gap=N/2;gap>0;gap/=2)
+            {
+                chart_shell.Series["Elements"].Points.Clear();
+                for (int i=0;i<N;i++)
+                {
+                    int temp = arr[i];
+                    int j;
+                    for (j = i; j >= gap && arr[j - gap] > temp; j -= gap)
+                        arr[j] = arr[j - gap];
+                    arr[j] = temp;
+                    Application.DoEvents();
+                    chart_shell.Series["Elements"].Points.AddXY(arr[i], arr[i]);
+                }
+                Thread.Sleep(3000);
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -95,6 +112,21 @@ namespace Proiect_Sincretic
             bubbblesort(arr,int.Parse(txt_array.Text));
             sw.Stop();
             lbl_time1.Text = Convert.ToString(sw.Elapsed.TotalMilliseconds);
+        }
+
+        private void btn_shellsort_Click(object sender, EventArgs e)
+        {
+            string array = lbl_array.Text;
+            string[] numbers = array.Split(' ');
+            int[] arr = new int[int.Parse(txt_array.Text)];
+            for (int i = 0; i < int.Parse(txt_array.Text); i++)
+            {
+                arr[i] = int.Parse(numbers[i]);
+            }
+            Stopwatch sw = Stopwatch.StartNew();
+           shellsort(arr, int.Parse(txt_array.Text));
+            sw.Stop();
+            lbl_time2.Text = Convert.ToString(sw.Elapsed.TotalMilliseconds);
         }
     }
 }
