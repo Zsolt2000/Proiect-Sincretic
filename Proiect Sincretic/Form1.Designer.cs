@@ -60,6 +60,8 @@
             this.lbl_time1 = new System.Windows.Forms.Label();
             this.lbl_time2 = new System.Windows.Forms.Label();
             this.lbl_time3 = new System.Windows.Forms.Label();
+            this.lbl_test = new System.Windows.Forms.Label();
+            this.btn_exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart_bubble)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_shell)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_quick)).BeginInit();
@@ -268,6 +270,7 @@
             this.button3.TabIndex = 25;
             this.button3.Text = "Sort";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // lbl_array
             // 
@@ -301,12 +304,32 @@
             this.lbl_time3.Size = new System.Drawing.Size(0, 13);
             this.lbl_time3.TabIndex = 29;
             // 
+            // lbl_test
+            // 
+            this.lbl_test.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbl_test.Location = new System.Drawing.Point(301, 163);
+            this.lbl_test.Name = "lbl_test";
+            this.lbl_test.Size = new System.Drawing.Size(901, 20);
+            this.lbl_test.TabIndex = 30;
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.Location = new System.Drawing.Point(656, 517);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(129, 23);
+            this.btn_exit.TabIndex = 31;
+            this.btn_exit.Text = "Exit Application";
+            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
             this.ClientSize = new System.Drawing.Size(1309, 566);
+            this.Controls.Add(this.btn_exit);
+            this.Controls.Add(this.lbl_test);
             this.Controls.Add(this.lbl_time3);
             this.Controls.Add(this.lbl_time2);
             this.Controls.Add(this.lbl_time1);
@@ -364,6 +387,8 @@
         private System.Windows.Forms.Label lbl_time1;
         private System.Windows.Forms.Label lbl_time2;
         private System.Windows.Forms.Label lbl_time3;
+        private System.Windows.Forms.Label lbl_test;
+        private System.Windows.Forms.Button btn_exit;
     }
 }
 
