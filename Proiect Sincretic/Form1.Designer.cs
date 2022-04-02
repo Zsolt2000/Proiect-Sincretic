@@ -37,7 +37,6 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_array = new System.Windows.Forms.TextBox();
@@ -67,23 +66,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart_quick)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Menu;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(314, 9);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(708, 42);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Sorting Algorithm Performance Analizer";
-            // 
             // label2
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(251, 143);
+            this.label2.Location = new System.Drawing.Point(291, 109);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(3, 332);
             this.label2.TabIndex = 1;
@@ -92,7 +78,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(13, 166);
+            this.label3.Location = new System.Drawing.Point(53, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 2;
@@ -101,7 +87,7 @@
             // txt_array
             // 
             this.txt_array.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txt_array.Location = new System.Drawing.Point(110, 163);
+            this.txt_array.Location = new System.Drawing.Point(150, 129);
             this.txt_array.Name = "txt_array";
             this.txt_array.Size = new System.Drawing.Size(100, 20);
             this.txt_array.TabIndex = 3;
@@ -110,7 +96,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(12, 202);
+            this.label4.Location = new System.Drawing.Point(52, 168);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 13);
             this.label4.TabIndex = 4;
@@ -118,14 +104,14 @@
             // 
             // txt_maxvalue
             // 
-            this.txt_maxvalue.Location = new System.Drawing.Point(110, 199);
+            this.txt_maxvalue.Location = new System.Drawing.Point(150, 165);
             this.txt_maxvalue.Name = "txt_maxvalue";
             this.txt_maxvalue.Size = new System.Drawing.Size(100, 20);
             this.txt_maxvalue.TabIndex = 5;
             // 
             // btn_generate
             // 
-            this.btn_generate.Location = new System.Drawing.Point(40, 248);
+            this.btn_generate.Location = new System.Drawing.Point(80, 214);
             this.btn_generate.Name = "btn_generate";
             this.btn_generate.Size = new System.Drawing.Size(170, 59);
             this.btn_generate.TabIndex = 6;
@@ -139,7 +125,7 @@
             this.chart_bubble.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart_bubble.Legends.Add(legend1);
-            this.chart_bubble.Location = new System.Drawing.Point(302, 215);
+            this.chart_bubble.Location = new System.Drawing.Point(342, 181);
             this.chart_bubble.Name = "chart_bubble";
             series1.ChartArea = "ChartArea1";
             series1.IsXValueIndexed = true;
@@ -156,7 +142,7 @@
             this.chart_shell.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart_shell.Legends.Add(legend2);
-            this.chart_shell.Location = new System.Drawing.Point(616, 215);
+            this.chart_shell.Location = new System.Drawing.Point(656, 181);
             this.chart_shell.Name = "chart_shell";
             series2.ChartArea = "ChartArea1";
             series2.IsXValueIndexed = true;
@@ -174,7 +160,7 @@
             this.chart_quick.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chart_quick.Legends.Add(legend3);
-            this.chart_quick.Location = new System.Drawing.Point(911, 215);
+            this.chart_quick.Location = new System.Drawing.Point(951, 181);
             this.chart_quick.Name = "chart_quick";
             series3.ChartArea = "ChartArea1";
             series3.IsXValueIndexed = true;
@@ -188,7 +174,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(416, 196);
+            this.label5.Location = new System.Drawing.Point(456, 162);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 11;
@@ -197,7 +183,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(738, 199);
+            this.label6.Location = new System.Drawing.Point(778, 165);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 13);
             this.label6.TabIndex = 12;
@@ -206,7 +192,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1036, 196);
+            this.label7.Location = new System.Drawing.Point(1076, 162);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 13);
             this.label7.TabIndex = 13;
@@ -216,7 +202,7 @@
             // 
             this.lbl_execBubble.AutoSize = true;
             this.lbl_execBubble.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_execBubble.Location = new System.Drawing.Point(344, 439);
+            this.lbl_execBubble.Location = new System.Drawing.Point(384, 405);
             this.lbl_execBubble.Name = "lbl_execBubble";
             this.lbl_execBubble.Size = new System.Drawing.Size(98, 13);
             this.lbl_execBubble.TabIndex = 14;
@@ -226,7 +212,7 @@
             // 
             this.lbl_execQuick.AutoSize = true;
             this.lbl_execQuick.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbl_execQuick.Location = new System.Drawing.Point(957, 439);
+            this.lbl_execQuick.Location = new System.Drawing.Point(997, 405);
             this.lbl_execQuick.Name = "lbl_execQuick";
             this.lbl_execQuick.Size = new System.Drawing.Size(98, 13);
             this.lbl_execQuick.TabIndex = 18;
@@ -236,7 +222,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.Location = new System.Drawing.Point(653, 439);
+            this.label8.Location = new System.Drawing.Point(693, 405);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(98, 13);
             this.label8.TabIndex = 22;
@@ -244,7 +230,7 @@
             // 
             // btn_bubblesort
             // 
-            this.btn_bubblesort.Location = new System.Drawing.Point(398, 392);
+            this.btn_bubblesort.Location = new System.Drawing.Point(438, 358);
             this.btn_bubblesort.Name = "btn_bubblesort";
             this.btn_bubblesort.Size = new System.Drawing.Size(75, 23);
             this.btn_bubblesort.TabIndex = 23;
@@ -254,7 +240,7 @@
             // 
             // btn_shellsort
             // 
-            this.btn_shellsort.Location = new System.Drawing.Point(710, 392);
+            this.btn_shellsort.Location = new System.Drawing.Point(750, 358);
             this.btn_shellsort.Name = "btn_shellsort";
             this.btn_shellsort.Size = new System.Drawing.Size(75, 23);
             this.btn_shellsort.TabIndex = 24;
@@ -264,7 +250,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(1013, 392);
+            this.button3.Location = new System.Drawing.Point(1053, 358);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 25;
@@ -275,7 +261,7 @@
             // lbl_array
             // 
             this.lbl_array.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl_array.Location = new System.Drawing.Point(302, 143);
+            this.lbl_array.Location = new System.Drawing.Point(342, 109);
             this.lbl_array.Name = "lbl_array";
             this.lbl_array.Size = new System.Drawing.Size(900, 15);
             this.lbl_array.TabIndex = 26;
@@ -283,7 +269,7 @@
             // lbl_time1
             // 
             this.lbl_time1.AutoSize = true;
-            this.lbl_time1.Location = new System.Drawing.Point(449, 439);
+            this.lbl_time1.Location = new System.Drawing.Point(489, 405);
             this.lbl_time1.Name = "lbl_time1";
             this.lbl_time1.Size = new System.Drawing.Size(0, 13);
             this.lbl_time1.TabIndex = 27;
@@ -291,7 +277,7 @@
             // lbl_time2
             // 
             this.lbl_time2.AutoSize = true;
-            this.lbl_time2.Location = new System.Drawing.Point(758, 439);
+            this.lbl_time2.Location = new System.Drawing.Point(798, 405);
             this.lbl_time2.Name = "lbl_time2";
             this.lbl_time2.Size = new System.Drawing.Size(0, 13);
             this.lbl_time2.TabIndex = 28;
@@ -299,7 +285,7 @@
             // lbl_time3
             // 
             this.lbl_time3.AutoSize = true;
-            this.lbl_time3.Location = new System.Drawing.Point(1062, 439);
+            this.lbl_time3.Location = new System.Drawing.Point(1102, 405);
             this.lbl_time3.Name = "lbl_time3";
             this.lbl_time3.Size = new System.Drawing.Size(0, 13);
             this.lbl_time3.TabIndex = 29;
@@ -307,14 +293,14 @@
             // lbl_test
             // 
             this.lbl_test.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbl_test.Location = new System.Drawing.Point(301, 163);
+            this.lbl_test.Location = new System.Drawing.Point(341, 129);
             this.lbl_test.Name = "lbl_test";
             this.lbl_test.Size = new System.Drawing.Size(901, 20);
             this.lbl_test.TabIndex = 30;
             // 
             // btn_exit
             // 
-            this.btn_exit.Location = new System.Drawing.Point(656, 517);
+            this.btn_exit.Location = new System.Drawing.Point(696, 483);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(129, 23);
             this.btn_exit.TabIndex = 31;
@@ -352,7 +338,6 @@
             this.Controls.Add(this.txt_array);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.chart_bubble)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart_shell)).EndInit();
@@ -363,8 +348,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_array;

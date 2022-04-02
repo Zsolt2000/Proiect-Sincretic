@@ -133,6 +133,8 @@ namespace Proiect_Sincretic
             return (i + 1);
         }
 
+
+
         //Function for the Quicksort algorithm
         private void quicksort(int[] arr, int left, int right)
         {
@@ -150,7 +152,7 @@ namespace Proiect_Sincretic
                 quicksort(arr, pivot + 1, right);
             }
         }
-        //Function that sort the array with the Bubblesort algorithm
+        //Function that sorts the array with the Bubblesort algorithm
         private void button1_Click(object sender, EventArgs e)
         {
             lbl_test.Text = "";
@@ -169,7 +171,7 @@ namespace Proiect_Sincretic
             lbl_time1.Text = Convert.ToString(sw.Elapsed.TotalMilliseconds);
         }
 
-        //Function that sort the array with the Shellsort algorithm
+        //Function that sorts the array with the Shellsort algorithm
         private void btn_shellsort_Click(object sender, EventArgs e)
         {
             lbl_test.Text = "";
@@ -188,7 +190,7 @@ namespace Proiect_Sincretic
             lbl_time2.Text = Convert.ToString(sw.Elapsed.TotalMilliseconds);
         }
 
-        //Function that sort the array with the Quicksort algorithm
+        //Function that sorts the array with the Quicksort algorithm
         private void button3_Click(object sender, EventArgs e)
         {
             lbl_test.Text = "";
